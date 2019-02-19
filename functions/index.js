@@ -1,4 +1,3 @@
-
 const functions = require('firebase-functions');
 exports.calculatorbot = functions.https.onRequest((request, response) => {
 console.log("request.body.result.parameters: ", request.body.result.parameters);
