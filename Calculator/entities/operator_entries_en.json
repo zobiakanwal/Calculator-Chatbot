@@ -1,0 +1,58 @@
+[
+  {
+    "value": "division",
+    "synonyms": [
+      "division",
+      "div",
+      "divide",
+      "dividing",
+      "/"
+    ]
+  },
+  {
+    "value": "multiplication",
+    "synonyms": [
+      "multiplication",
+      "multiply",
+      "mul",
+      "product",
+      "multiplying",
+      "*"
+    ]
+  },
+  {
+    "value": "addition",
+    "synonyms": [
+      "addition",
+      "add",
+      "plus",
+      "sum",
+      "adding",
+      "+"
+    ]
+  },
+  {
+    "value": "subtraction",
+    "synonyms": [
+      "subtraction",
+      "subtract",
+      "sub",
+      "minus",
+      "subtracting",
+      "-"
+    ]
+  },
+  {
+    "value": "modulus",
+    "synonyms": [
+      "modulus",
+      "modulo",
+      "mod",
+      "remainder",
+      "leftover",
+      "left",
+      "lefts",
+      "%"
+    ]
+  }
+]

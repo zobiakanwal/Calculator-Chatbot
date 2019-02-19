@@ -1,0 +1,74 @@
+{
+  "id": "ad1d7d3a-cee8-4ab2-8c36-02503aec0be7",
+  "name": "Calculator",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "calculation",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "4874d6d2-cf1f-446d-9efe-454e7feab4b7",
+          "required": true,
+          "dataType": "@operator",
+          "name": "operator",
+          "value": "$operator",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What operation you want me to perform?"
+            }
+          ],
+          "defaultValue": "What operation you want me to perform for you?",
+          "isList": true
+        },
+        {
+          "id": "8cb42b2a-34f9-471f-b9a2-bf4e25f03b4e",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "number1",
+          "value": "$number1",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Provide first number."
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "c14e4b57-64a1-465b-85ed-f23c80cfbb82",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "number2",
+          "value": "$number2",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Provide second number."
+            }
+          ],
+          "defaultValue": "Provide no.2",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1550608914,
+  "fallbackIntent": false,
+  "events": []
+}
