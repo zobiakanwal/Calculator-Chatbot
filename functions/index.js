@@ -2,11 +2,11 @@ const functions = require('firebase-functions');
 exports.calculatorbot = functions.https.onRequest((request, response) => {
 console.log("request.body.result.parameters: ", request.body.result.parameters);
 let params = request.body.result.parameters; 
-var sum = parseFloat(params.number1) + parseFloat(params.number2);
-var sub = parseFloat(params.number1) - parseFloat(params.number2);
-var mul = parseFloat(params.number1) * parseFloat(params.number2);
-var div = parseFloat(params.number1) / parseFloat(params.number2);
-var mod = parseFloat(params.number1) % parseFloat(params.number2);
+var sum = Number(params.number1) + Number(params.number2);
+var sub = Number(params.number1) - Number(params.number2);
+var mul = Number(params.number1) * Number(params.number2);
+var div = Number(params.number1) / Number(params.number2);
+var mod = Number(params.number1) % Number(params.number2);
     if (params.operator === "addition") {
         response.send({
                 speech:
@@ -35,6 +35,12 @@ var mod = parseFloat(params.number1) % parseFloat(params.number2);
         response.send({
                 speech:
                 `Here is your answer: ${mod}`            
+            });
+       }
+       else {
+        response.send({
+                speech:
+                `Invalid operator! I can perform addition, multiplication, division, modulus and subtraction`            
             });
        }
 });
